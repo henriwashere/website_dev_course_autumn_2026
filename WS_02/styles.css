@@ -10,11 +10,12 @@ p {
       font-size: 2em;
     }
 
+
     .content-box {
   padding: 100px;
   margin: 60px;
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
+  background-color: #2bcd59;
+  border: 10px solid #000000;
 }
 
 table {
@@ -35,7 +36,7 @@ table {
     form {
       display: flex;
       flex-direction: column;
-      gap: 15px;
+      gap: 10px;
     }
     
     label {
@@ -49,14 +50,14 @@ table {
     }
     
     input[type="submit"] {
-      background-color: #4CAF50;
+      background-color: #ab2ccb;
       color: white;
-      padding: 10px;
+      padding: 30px;
       border: none;
-      border-radius: 4px;
+      border-radius: 500px;
       cursor: pointer;
     }
     
     input[type="submit"]:hover {
-      background-color: #45a049;
+      background-color: #a04545;
     }
