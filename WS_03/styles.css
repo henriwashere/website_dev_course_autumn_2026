@@ -1,0 +1,106 @@
+p {
+      color: blue;
+    }
+    
+    body {
+      background-color: lightgray;
+    }
+    
+    h1 {
+      font-size: 2em;
+    }
+
+
+.animation-box {
+        width: 75px;
+        height: 75px;
+        background-color: lightblue;
+        position: relative;
+        animation: move 5s infinite alternate;
+      }
+      
+      @keyframes move {
+        from {
+          background-color: lightblue;
+          left: 0;
+        }
+        to {
+          background-color: darkblue;
+          left: 725px;
+        }
+    
+  
+      }
+
+
+.transition-button {
+        background-color: rgb(231, 235, 33);
+        padding: 20px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 1.0s ease-in-out, transform 1.0s ease-in-out;
+      }
+      
+      .transition-button:hover {
+        background-color: rgb(241, 159, 8);
+        transform: scale(1.55);
+        font-size: 0; /* Hides the original "Hover me" text - Google Gemini*/
+      }
+
+      .transition-button:hover::after {
+  content: "Get away from me!"; /* Your replacement text - Google Gemini*/
+  font-size: 14px;      /* Restores readable text size - Google Gemini*/
+}
+
+
+    .content-box {
+  padding: 100px;
+  margin: 60px;
+  background-color: #2bcd59;
+  border: 10px solid #000000;
+}
+
+table {
+      width: 50%;
+      border-collapse: collapse;
+    }
+    
+    th, td {
+      border: 1px solid #000000;
+      padding: 8px;
+      text-align: center;
+    }
+    
+    th {
+      background-color: #f2f2f2;
+    }
+    
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    label {
+      font-weight: bold;
+    }
+    
+    input[type="text"], input[type="email"] {
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    
+    input[type="submit"] {
+      background-color: #ab2ccb;
+      color: white;
+      padding: 30px;
+      border: none;
+      border-radius: 500px;
+      cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: #a04545;
+    }
