@@ -10,6 +10,46 @@ p {
       font-size: 2em;
     }
 
+    
+.quote {
+        position: relative;
+        padding-left: 50px;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 24px;
+      }
+      
+      .quote::before {
+        content: '“';
+        font-size: 60px;
+        position: static;
+        left: 0;
+        top: 0;
+        color: rgb(255, 255, 255);
+      }
+
+
+
+.filter-image {
+        filter: grayscale(100%);
+        transition: filter 1.5s ease;
+      }
+      
+      .filter-image:hover {
+        filter: grayscale(0%);
+      }
+    
+
+.pseudo-list li:nth-child(odd) {
+        background-color: black;
+      }
+      
+      .pseudo-list li:nth-child(even) {
+        background-color: white;
+        color: white;
+      }
+
+
 
 .animation-box {
         width: 75px;
@@ -49,8 +89,8 @@ p {
       }
 
       .transition-button:hover::after {
-  content: "Get away from me!"; /* Your replacement text - Google Gemini*/
-  font-size: 14px;      /* Restores readable text size - Google Gemini*/
+        content: "Get away from me!"; /* Your replacement text - Google Gemini*/
+        font-size: 14px;      /* Restores readable text size - Google Gemini*/
 }
 
 
